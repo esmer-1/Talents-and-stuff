@@ -5,7 +5,7 @@
 		<name>Talien Talents</name>
 		<description>Custom talents for Talien.</description>
 		<author>B B</author>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="talien-talents.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/talents/talien/talien-talents.xml" />
 		</update>
 	</info>
@@ -35,19 +35,38 @@
 	</element>
 
 	<element name="Tempered Flame Maneuvers" type="Feat" source="Laurence Stuff" id="ID_TALIEN_FEAT_TEMPERED_FLAME_MANEUVERS">
-		<description>
-			<p>You gain an additional superiority die, and learn the following two maneuvers:</p>
-			<ul>
-				<li><strong>Blistering Strike.</strong> When you hit a creature with a weapon attack, you can expend one superiority die to create a burst of brilliant light. You add the superiority die to the attack's damage roll, and the target must make a Constitution saving throw. On a failed save, it is blinded until the end of your next turn.</li>
-				<li><strong>Flame Wave.</strong> In place of an attack, you can expend two superiority dice to create a wave of fire in a line 30 feet long. Roll both dice and add your Dexterity modifier. Each creature in that line must make a Dexterity saving throw, taking that much fire damage on a failed save, or half as much on a successful one.</li>
-			</ul>
-		</description>
-		<sheet>
-			<description>You gain an additional superiority die and learn the following maneuvers: &#13;
-			• Blistering Strike. When you hit with a weapon attack, expend one superiority die. Add it to the attack's damage roll, and the target must make a Constitution saving throw. On a failed save, it is blinded until the end of your next turn. &#13;
-			• Flame Wave. In place of an attack, expend two superiority dice to create a 30-foot line of fire. Roll both dice and add your Dexterity modifier. Each creature in the line makes a Dexterity saving throw, taking that much fire damage on a failed save, or half as much on a successful one.</description>
-		</sheet>
-	</element>
+	<description>
+		<p>You gain an additional superiority die and learn two additional maneuvers. Blistering Strike and Flame Wave are added to the list of maneuvers you can choose from.</p>
+	</description>
+	<sheet>
+		<description>You gain an additional superiority die and learn two additional maneuvers. Blistering Strike and Flame Wave are available as maneuver choices.</description>
+	</sheet>
+	<rules>
+		<stat name="superiority dice:amount" value="1" />
+		<select type="Class Feature" name="Maneuver" supports="Maneuver" />
+		<select type="Class Feature" name="Maneuver" supports="Maneuver" />
+	</rules>
+</element>
+
+<element name="Blistering Strike" type="Class Feature" source="Laurence Stuff" id="ID_TALIEN_MANEUVER_BLISTERING_STRIKE">
+	<supports>Maneuver</supports>
+	<description>
+		<p>When you hit a creature with a weapon attack, you can expend one superiority die to create a burst of brilliant light. You add the superiority die to the attack's damage roll, and the target must make a Constitution saving throw. On a failed save, it is blinded until the end of your next turn.</p>
+	</description>
+	<sheet>
+		<description>When you hit with a weapon attack, expend one superiority die. Add it to the attack's damage roll, and the target makes a Constitution saving throw. On a failed save, it is blinded until the end of your next turn.</description>
+	</sheet>
+</element>
+
+<element name="Flame Wave" type="Class Feature" source="Laurence Stuff" id="ID_TALIEN_MANEUVER_FLAME_WAVE">
+	<supports>Maneuver</supports>
+	<description>
+		<p>In place of an attack, you can expend two superiority dice to create a wave of fire in a line 30 feet long. Roll both dice and add your Dexterity modifier. Each creature in that line must make a Dexterity saving throw, taking that much fire damage on a failed save, or half as much on a successful one.</p>
+	</description>
+	<sheet>
+		<description>In place of an attack, expend two superiority dice to create a 30-foot line of fire. Roll both dice and add your Dexterity modifier. Creatures in the line make a Dexterity saving throw, taking that much fire damage on a failed save, or half on a success.</description>
+	</sheet>
+</element>
 
 	<element name="Deflect Blades" type="Feat" source="Laurence Stuff" id="ID_TALIEN_FEAT_DEFLECT_BLADES">
 		<description>
