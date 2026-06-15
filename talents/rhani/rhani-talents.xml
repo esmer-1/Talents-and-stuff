@@ -1,1 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+
+	<info>
+		<name>Rhani's Talents</name>
+		<description>Custom feats for Rhani.</description>
+		<author>B B</author>
+		<update version="1.0.1">
+			<file name="rhani-talents-v2.xml" url="https://raw.githubusercontent.com/esmer-1/talents/main/rhani-talents-v2.xml" />
+		</update>
+	</info>
+
+	<element name="Bardsong" type="Feat" source="Rhani's Talents" id="ID_RHANIS_TALENTS_FEAT_BARDSONG">
+		<description>
+			<p>When you transform using Form of Dread, you can hear an inspiring supernatural melody. You gain a d6 bonus die that you can add to one ability check, attack roll, or saving throw you make before Form of Dread ends.</p>
+			<p>When you use this bonus die, you also regain hit points equal to the d6 roll.</p>
+		</description>
+		<sheet>
+			<description>
+				When you transform using Form of Dread, gain a d6 bonus die. Before Form of Dread ends, you can add it to one ability check, attack roll, or saving throw. When you use this die, regain hit points equal to the d6 roll.
+			</description>
+		</sheet>
+	</element>
+
+	<element name="Warding Aria" type="Feat" source="Rhani's Talents" id="ID_RHANIS_TALENTS_FEAT_WARDING_ARIA">
+	<description>
+		<p>As a bonus action, choose one creature within 30 feet who can hear you. That creature gains a bonus or penalty (your choice) to its saving throws equal to your Charisma modifier until the start of your next turn.</p>
+		<p>Alternatively, as an action, you can choose up to 5 creatures to receive this bonus or penalty, but it must be the same type for all creatures chosen (all bonus or all penalty).</p>
+		<p>You can use this talent freely while in Form of Dread. While not in Form of Dread, you can use this talent a number of times per long rest equal to your Charisma modifier.</p>
+	</description>
+	<sheet action="Bonus Action" usage="{{warding aria:uses}}/Long Rest">
+		<description>Choose one creature within 30 feet who can hear you. It gains a bonus or penalty to saving throws equal to {{warding aria:bonus}} until the start of your next turn. As an Action, you can instead affect up to 5 creatures; all receive the same type of effect. Unlimited use while in Form of Dread.</description>
+	</sheet>
+	<rules>
+		<stat name="warding aria:bonus" value="charisma:modifier" bonus="base" />
+		<stat name="warding aria:uses" value="charisma:modifier" bonus="base" />
+	</rules>
+</element>
+
+</elements>
 
