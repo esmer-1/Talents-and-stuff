@@ -1,1 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
 
+	<info>
+		<name>Talien Talents</name>
+		<description>Custom talents for Talien.</description>
+		<author>B B</author>
+		<update version="1.0.0">
+			<file name="talien-talents.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/talents/talien/talien-talents.xml" />
+		</update>
+	</info>
+
+	<element name="Tempered Flame Stance" type="Feat" source="Laurence Stuff" id="ID_TALIEN_FEAT_TEMPERED_FLAME_STANCE">
+		<description>
+			<p>You are trained in a swordfighting style known as The Tempered Flame.</p>
+			<p>As a bonus action on your turn, you can enter Tempered Flame Stance, gaining the following benefits:</p>
+			<ul>
+				<li>You are considered proficient in Dexterity saving throws.</li>
+				<li>You gain a +1 bonus on attack rolls with light weapons.</li>
+				<li>You can move up to 10 feet on your turn without provoking opportunity attacks.</li>
+				<li>When you add a superiority die to a damage roll, you can choose for the superiority die's damage to be fire damage.</li>
+			</ul>
+			<p>You can exit the stance whenever you wish (no action required).</p>
+			<p>If you ever fall prone or are subject to a condition that prevents you from moving, you automatically exit the stance.</p>
+			<p>The stance's benefits will increase with future talents, but you can also train to gain new benefits, as though training a new skill.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>
+				Enter Tempered Flame Stance. While in the stance, you are proficient in Dexterity saving throws, gain a +1 bonus to attack rolls with light weapons, can move up to 10 feet on your turn without provoking opportunity attacks, and may change superiority die damage to fire damage. The stance ends if you choose to end it, fall prone, or become unable to move.
+			</description>
+		</sheet>
+	</element>
+
+</elements>
