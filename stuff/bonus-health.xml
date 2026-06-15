@@ -2,85 +2,84 @@
 <elements>
 
   <info>
-    <name>Bonus Health Items</name>
-    <description>Wondrous items that grant bonus hit points.</description>
+    <name>Laurence Stuff</name>
+    <description>Custom items and character options for Laurence's campaign.</description>
     <author>esmer-1</author>
     <update version="1.0.0">
-      <file name="bonus-health.xml" url="https://raw.githubusercontent.com/esmer-1/Aurora-Bonus-Health/main/bonus-health.xml" />
+      <file name="bonus-health.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/stuff/bonus-health.xml" />
     </update>
   </info>
 
-  <element name="Bonus Health +1" type="Magic Item" source="Bonus Health Items" id="ID_BONUS_HEALTH_ITEM_1">
+  <element name="Bonus Health +1" type="Magic Item" source="Laurence Stuff" id="ID_BONUS_HEALTH_ITEM_1">
     <description><p>Your hit points maximum increases by 1 while this item is in your inventory.</p></description>
     <setters><set name="category">Wondrous Items</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Wondrous Item</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
     <rules><stat name="bonus-health-item-1:hp" value="1" /><stat name="hp" value="bonus-health-item-1:hp" /></rules>
   </element>
 
-  <element name="Bonus Health +2" type="Magic Item" source="Bonus Health Items" id="ID_BONUS_HEALTH_ITEM_2">
+  <element name="Bonus Health +2" type="Magic Item" source="Laurence Stuff" id="ID_BONUS_HEALTH_ITEM_2">
     <description><p>Your hit points maximum increases by 2 while this item is in your inventory.</p></description>
     <setters><set name="category">Wondrous Items</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Wondrous Item</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
     <rules><stat name="bonus-health-item-2:hp" value="2" /><stat name="hp" value="bonus-health-item-2:hp" /></rules>
   </element>
 
-  <element name="Bonus Health +3" type="Magic Item" source="Bonus Health Items" id="ID_BONUS_HEALTH_ITEM_3">
+  <element name="Bonus Health +3" type="Magic Item" source="Laurence Stuff" id="ID_BONUS_HEALTH_ITEM_3">
     <description><p>Your hit points maximum increases by 3 while this item is in your inventory.</p></description>
     <setters><set name="category">Wondrous Items</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Wondrous Item</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
     <rules><stat name="bonus-health-item-3:hp" value="3" /><stat name="hp" value="bonus-health-item-3:hp" /></rules>
   </element>
 
-  <element name="Bonus Health +4" type="Magic Item" source="Bonus Health Items" id="ID_BONUS_HEALTH_ITEM_4">
+  <element name="Bonus Health +4" type="Magic Item" source="Laurence Stuff" id="ID_BONUS_HEALTH_ITEM_4">
     <description><p>Your hit points maximum increases by 4 while this item is in your inventory.</p></description>
     <setters><set name="category">Wondrous Items</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Wondrous Item</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
     <rules><stat name="bonus-health-item-4:hp" value="4" /><stat name="hp" value="bonus-health-item-4:hp" /></rules>
   </element>
 
-  <element name="Bonus Health +5" type="Magic Item" source="Bonus Health Items" id="ID_BONUS_HEALTH_ITEM_5">
+  <element name="Bonus Health +5" type="Magic Item" source="Laurence Stuff" id="ID_BONUS_HEALTH_ITEM_5">
     <description><p>Your hit points maximum increases by 5 while this item is in your inventory.</p></description>
     <setters><set name="category">Wondrous Items</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Wondrous Item</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
     <rules><stat name="bonus-health-item-5:hp" value="5" /><stat name="hp" value="bonus-health-item-5:hp" /></rules>
   </element>
 
-  <element name="Bonus Health +6" type="Magic Item" source="Bonus Health Items" id="ID_BONUS_HEALTH_ITEM_6">
+  <element name="Bonus Health +6" type="Magic Item" source="Laurence Stuff" id="ID_BONUS_HEALTH_ITEM_6">
     <description><p>Your hit points maximum increases by 6 while this item is in your inventory.</p></description>
     <setters><set name="category">Wondrous Items</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Wondrous Item</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
     <rules><stat name="bonus-health-item-6:hp" value="6" /><stat name="hp" value="bonus-health-item-6:hp" /></rules>
   </element>
 
-  <element name="Bonus Health +7" type="Magic Item" source="Bonus Health Items" id="ID_BONUS_HEALTH_ITEM_7">
+  <element name="Bonus Health +7" type="Magic Item" source="Laurence Stuff" id="ID_BONUS_HEALTH_ITEM_7">
     <description><p>Your hit points maximum increases by 7 while this item is in your inventory.</p></description>
     <setters><set name="category">Wondrous Items</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Wondrous Item</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
     <rules><stat name="bonus-health-item-7:hp" value="7" /><stat name="hp" value="bonus-health-item-7:hp" /></rules>
   </element>
 
-  <element name="Bonus Health +8" type="Magic Item" source="Bonus Health Items" id="ID_BONUS_HEALTH_ITEM_8">
+  <element name="Bonus Health +8" type="Magic Item" source="Laurence Stuff" id="ID_BONUS_HEALTH_ITEM_8">
     <description><p>Your hit points maximum increases by 8 while this item is in your inventory.</p></description>
     <setters><set name="category">Wondrous Items</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Wondrous Item</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
     <rules><stat name="bonus-health-item-8:hp" value="8" /><stat name="hp" value="bonus-health-item-8:hp" /></rules>
   </element>
 
-  <element name="Bonus Health +9" type="Magic Item" source="Bonus Health Items" id="ID_BONUS_HEALTH_ITEM_9">
+  <element name="Bonus Health +9" type="Magic Item" source="Laurence Stuff" id="ID_BONUS_HEALTH_ITEM_9">
     <description><p>Your hit points maximum increases by 9 while this item is in your inventory.</p></description>
     <setters><set name="category">Wondrous Items</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Wondrous Item</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
     <rules><stat name="bonus-health-item-9:hp" value="9" /><stat name="hp" value="bonus-health-item-9:hp" /></rules>
   </element>
 
-  <element name="Bonus Health +10" type="Magic Item" source="Bonus Health Items" id="ID_BONUS_HEALTH_ITEM_10">
+  <element name="Bonus Health +10" type="Magic Item" source="Laurence Stuff" id="ID_BONUS_HEALTH_ITEM_10">
     <description><p>Your hit points maximum increases by 10 while this item is in your inventory.</p></description>
     <setters><set name="category">Wondrous Items</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Wondrous Item</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
     <rules><stat name="bonus-health-item-10:hp" value="10" /><stat name="hp" value="bonus-health-item-10:hp" /></rules>
   </element>
 
-  <element name="Bonus Health +11" type="Magic Item" source="Bonus Health Items" id="ID_BONUS_HEALTH_ITEM_11">
+  <element name="Bonus Health +11" type="Magic Item" source="Laurence Stuff" id="ID_BONUS_HEALTH_ITEM_11">
     <description><p>Your hit points maximum increases by 11 while this item is in your inventory.</p></description>
     <setters><set name="category">Wondrous Items</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Wondrous Item</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
     <rules><stat name="bonus-health-item-11:hp" value="11" /><stat name="hp" value="bonus-health-item-11:hp" /></rules>
   </element>
 
-  <element name="Bonus Health +12" type="Magic Item" source="Bonus Health Items" id="ID_BONUS_HEALTH_ITEM_12">
+  <element name="Bonus Health +12" type="Magic Item" source="Laurence Stuff" id="ID_BONUS_HEALTH_ITEM_12">
     <description><p>Your hit points maximum increases by 12 while this item is in your inventory.</p></description>
     <setters><set name="category">Wondrous Items</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Wondrous Item</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
     <rules><stat name="bonus-health-item-12:hp" value="12" /><stat name="hp" value="bonus-health-item-12:hp" /></rules>
   </element>
 
 </elements>
-
