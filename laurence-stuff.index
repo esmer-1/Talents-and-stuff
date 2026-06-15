@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Laurence Stuff</name>
+		<description>Custom talents and campaign options for Laurence's campaign.</description>
+		<author>B B</author>
+		<update version="1.0.0">
+			<file name="laurence-stuff.index" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/laurence-stuff.index" />
+		</update>
+	</info>
+
+	<files>
+		<file name="bonus-health.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/stuff/bonus-health.xml" />
+		<file name="allynna-talents.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/talents/allynna/allynna-talents.xml" />
+		<file name="ordel-talents.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/talents/ordel/ordel-talents.xml" />
+		<file name="raka-talents.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/talents/raka/raka-talents.xml" />
+		<file name="rhani-talents.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/talents/rhani/rhani-talents.xml" />
+		<file name="talien-talents.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/talents/talien/talien-talents.xml" />
+	</files>
+</index>
