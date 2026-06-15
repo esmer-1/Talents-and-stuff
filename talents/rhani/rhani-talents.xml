@@ -10,7 +10,7 @@
 		</update>
 	</info>
 
-	<element name="Bardsong" type="Feat" source="Rhani's Talents" id="ID_RHANIS_TALENTS_FEAT_BARDSONG">
+	<element name="Bardsong" type="Feat" source="Laurence Stuff" id="ID_RHANIS_TALENTS_FEAT_BARDSONG">
 		<description>
 			<p>When you transform using Form of Dread, you can hear an inspiring supernatural melody. You gain a d6 bonus die that you can add to one ability check, attack roll, or saving throw you make before Form of Dread ends.</p>
 			<p>When you use this bonus die, you also regain hit points equal to the d6 roll.</p>
@@ -22,7 +22,7 @@
 		</sheet>
 	</element>
 
-	<element name="Warding Aria" type="Feat" source="Rhani's Talents" id="ID_RHANIS_TALENTS_FEAT_WARDING_ARIA">
+	<element name="Warding Aria" type="Feat" source="Laurence Stuff" id="ID_RHANIS_TALENTS_FEAT_WARDING_ARIA">
 	<description>
 		<p>As a bonus action, choose one creature within 30 feet who can hear you. That creature gains a bonus or penalty (your choice) to its saving throws equal to your Charisma modifier until the start of your next turn.</p>
 		<p>Alternatively, as an action, you can choose up to 5 creatures to receive this bonus or penalty, but it must be the same type for all creatures chosen (all bonus or all penalty).</p>
