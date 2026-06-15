@@ -1,5 +1,8 @@
 Some custom content for a DnD 5e campaign i wanted to put inside Aurora Builder
 
+Put this link in Aurora Bulder additional content tab
+
+https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/laurence-stuff.index
 
 1. How to get custom talents to show up
 equipment->additional feat->filter sources for "Laurence Stuff"->add the talent to inventory and click "equip"
