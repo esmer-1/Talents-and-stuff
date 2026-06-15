@@ -1,1 +1,19 @@
-
+<element name="Wizardry Training" type="Feat" source="Laurence Stuff" id="ID_TALIEN_FEAT_WIZARDRY_TRAINING">
+	<description>
+		<p>Thanks to Nevod Dorsk, you have received some training in the ways of the wizard, granting you these benefits:</p>
+		<ul>
+			<li>You can cast ritual spells as rituals.</li>
+			<li>You can understand wizard spells and cast them from spell scrolls.</li>
+			<li>You can attempt to learn additional spells from the sorcerer or wizard spell list. To do so, you must first acquire the spell from a scroll or spellbook. You must then study the spell for 4 hours per level of the spell, and then make an Arcana check with DC 10 + the spell’s level. On a success, you learn the spell. On a failure, you must study the spell for a further hour per level of the spell before repeating the check. The hours need not be consecutive. You can learn a number of spells in this manner equal to your Intelligence modifier + your proficiency bonus, multiplied by 2. These spells count as sorcerer spells for you.</li>
+		</ul>
+	</description>
+	<sheet>
+		<description>You can cast ritual spells as rituals. You can understand wizard spells and cast them from spell scrolls. You can learn up to {{wizardry training:spells known}} spells from the sorcerer or wizard spell list in this manner. To learn one, study it for 4 hours per spell level, then make an Arcana check with DC 10 + the spell's level. On a failure, study for 1 further hour per spell level before trying again. These spells count as sorcerer spells for you.</description>
+	</sheet>
+	<rules>
+		<stat name="wizardry training:calculation" value="intelligence:modifier" />
+		<stat name="wizardry training:calculation" value="proficiency" />
+		<stat name="wizardry training:spells known" value="wizardry training:calculation" />
+		<stat name="wizardry training:spells known" value="wizardry training:calculation" />
+	</rules>
+</element>
