@@ -37,7 +37,7 @@
 	<stat name="wizardry training:spells known" value="wizardry training:base" />
 	<stat name="wizardry training:spells known" value="wizardry training:base" />
 
-	<select type="Spell" name="Spell (Wizardry Training)" supports="Sorcerer" number="12" />
+	<select type="Spell" name="Spell (Wizardry Training)" supports="(Sorcerer||Wizard)" number="12" />
 </rules>
 	</element>
 
