@@ -3,16 +3,16 @@
 
 	<info>
 		<name>Laurence Stuff - New Skills</name>
-		<description>Custom campaign skills as Additional Feat items.</description>
+		<description>Custom campaign skills as New Skills items.</description>
 		<author>B B</author>
-		<update version="1.0.0">
+		<update version="1.0.3">
 			<file name="new-skills.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/stuff/new-skills.xml" />
 		</update>
 	</info>
 
 	<element name="Society" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SOCIETY">
 		<description><p>Grants the Society feature.</p></description>
-		<setters><set name="category">Additional Feat</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Additional Feat</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
+		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
 		<rules><grant type="Feat" id="ID_LAURENCE_FEAT_SOCIETY" /></rules>
 	</element>
 
@@ -24,7 +24,7 @@
 
 	<element name="Society Proficiency" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SOCIETY_PROFICIENCY">
 		<description><p>Grants the Society Proficiency feature.</p></description>
-		<setters><set name="category">Additional Feat</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Additional Feat</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
+		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
 		<rules><grant type="Feat" id="ID_LAURENCE_FEAT_SOCIETY_PROFICIENCY" /></rules>
 	</element>
 
@@ -36,7 +36,7 @@
 
 	<element name="Concentration" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_CONCENTRATION">
 		<description><p>Grants the Concentration feature.</p></description>
-		<setters><set name="category">Additional Feat</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Additional Feat</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
+		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
 		<rules><grant type="Feat" id="ID_LAURENCE_FEAT_CONCENTRATION" /></rules>
 	</element>
 
@@ -48,7 +48,7 @@
 
 	<element name="Concentration Proficiency" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_CONCENTRATION_PROFICIENCY">
 		<description><p>Grants the Concentration Proficiency feature.</p></description>
-		<setters><set name="category">Additional Feat</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Additional Feat</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
+		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
 		<rules><grant type="Feat" id="ID_LAURENCE_FEAT_CONCENTRATION_PROFICIENCY" /></rules>
 	</element>
 
@@ -60,7 +60,7 @@
 
 	<element name="Spellpower (Intelligence)" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SPELLPOWER_INT">
 		<description><p>Grants the Spellpower (Intelligence) feature.</p></description>
-		<setters><set name="category">Additional Feat</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Additional Feat</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
+		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
 		<rules><grant type="Feat" id="ID_LAURENCE_FEAT_SPELLPOWER_INT" /></rules>
 	</element>
 
@@ -72,7 +72,7 @@
 
 	<element name="Spellpower (Intelligence) Proficiency" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SPELLPOWER_INT_PROFICIENCY">
 		<description><p>Grants the Spellpower (Intelligence) Proficiency feature.</p></description>
-		<setters><set name="category">Additional Feat</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Additional Feat</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
+		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
 		<rules><grant type="Feat" id="ID_LAURENCE_FEAT_SPELLPOWER_INT_PROFICIENCY" /></rules>
 	</element>
 
@@ -84,7 +84,7 @@
 
 	<element name="Spellpower (Wisdom)" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SPELLPOWER_WIS">
 		<description><p>Grants the Spellpower (Wisdom) feature.</p></description>
-		<setters><set name="category">Additional Feat</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Additional Feat</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
+		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
 		<rules><grant type="Feat" id="ID_LAURENCE_FEAT_SPELLPOWER_WIS" /></rules>
 	</element>
 
@@ -96,7 +96,7 @@
 
 	<element name="Spellpower (Wisdom) Proficiency" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SPELLPOWER_WIS_PROFICIENCY">
 		<description><p>Grants the Spellpower (Wisdom) Proficiency feature.</p></description>
-		<setters><set name="category">Additional Feat</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Additional Feat</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
+		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
 		<rules><grant type="Feat" id="ID_LAURENCE_FEAT_SPELLPOWER_WIS_PROFICIENCY" /></rules>
 	</element>
 
@@ -108,7 +108,7 @@
 
 	<element name="Spellpower (Charisma)" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SPELLPOWER_CHA">
 		<description><p>Grants the Spellpower (Charisma) feature.</p></description>
-		<setters><set name="category">Additional Feat</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Additional Feat</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
+		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
 		<rules><grant type="Feat" id="ID_LAURENCE_FEAT_SPELLPOWER_CHA" /></rules>
 	</element>
 
@@ -120,7 +120,7 @@
 
 	<element name="Spellpower (Charisma) Proficiency" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SPELLPOWER_CHA_PROFICIENCY">
 		<description><p>Grants the Spellpower (Charisma) Proficiency feature.</p></description>
-		<setters><set name="category">Additional Feat</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="type">Additional Feat</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
+		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
 		<rules><grant type="Feat" id="ID_LAURENCE_FEAT_SPELLPOWER_CHA_PROFICIENCY" /></rules>
 	</element>
 
