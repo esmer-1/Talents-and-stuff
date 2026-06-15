@@ -3,131 +3,191 @@
 
 	<info>
 		<name>Laurence Stuff - New Skills</name>
-		<description>Custom campaign skills as New Skills items.</description>
+		<description>Custom campaign skills as New Skills items that grant racial trait entries.</description>
 		<author>B B</author>
-		<update version="1.0.3">
+		<update version="1.0.7">
 			<file name="new-skills.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/stuff/new-skills.xml" />
 		</update>
 	</info>
 
 	<element name="Society" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SOCIETY">
-		<description><p>Grants the Society feature.</p></description>
+		<description><p>Grants the Society racial trait.</p></description>
 		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
-		<rules><grant type="Feat" id="ID_LAURENCE_FEAT_SOCIETY" /></rules>
+		<rules><grant type="Racial Trait" id="ID_LAURENCE_RACIAL_SOCIETY" /></rules>
 	</element>
 
-	<element name="Society" type="Feat" source="Laurence Stuff" id="ID_LAURENCE_FEAT_SOCIETY">
+	<element name="Society" type="Racial Trait" source="Laurence Stuff" id="ID_LAURENCE_RACIAL_SOCIETY">
 		<description><p>Society represents knowledge of current affairs. It is based on Intelligence.</p></description>
-		<sheet><description>Society: {{society:skill}}. Uses Intelligence.</description></sheet>
+		<sheet><description>+{{society:skill}}. Uses Intelligence.</description></sheet>
 		<rules><stat name="society:skill" value="intelligence:modifier" /></rules>
 	</element>
 
 	<element name="Society Proficiency" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SOCIETY_PROFICIENCY">
-		<description><p>Grants the Society Proficiency feature.</p></description>
+		<description><p>Grants the Society Proficiency racial trait.</p></description>
 		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
-		<rules><grant type="Feat" id="ID_LAURENCE_FEAT_SOCIETY_PROFICIENCY" /></rules>
+		<rules><grant type="Racial Trait" id="ID_LAURENCE_RACIAL_SOCIETY_PROFICIENCY" /></rules>
 	</element>
 
-	<element name="Society Proficiency" type="Feat" source="Laurence Stuff" id="ID_LAURENCE_FEAT_SOCIETY_PROFICIENCY">
+	<element name="Society Proficiency" type="Racial Trait" source="Laurence Stuff" id="ID_LAURENCE_RACIAL_SOCIETY_PROFICIENCY">
 		<description><p>Society represents knowledge of current affairs. You are proficient in Society.</p></description>
-		<sheet><description>Society: {{society:skill}}. Uses Intelligence + Proficiency Bonus.</description></sheet>
+		<sheet><description>+{{society:skill}}. Uses Intelligence + Proficiency Bonus.</description></sheet>
 		<rules><stat name="society:skill" value="intelligence:modifier" /><stat name="society:skill" value="proficiency" /></rules>
 	</element>
 
-	<element name="Concentration" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_CONCENTRATION">
-		<description><p>Grants the Concentration feature.</p></description>
+	<element name="Society Expertise" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SOCIETY_EXPERTISE">
+		<description><p>Grants the Society Expertise racial trait.</p></description>
 		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
-		<rules><grant type="Feat" id="ID_LAURENCE_FEAT_CONCENTRATION" /></rules>
+		<rules><grant type="Racial Trait" id="ID_LAURENCE_RACIAL_SOCIETY_EXPERTISE" /></rules>
 	</element>
 
-	<element name="Concentration" type="Feat" source="Laurence Stuff" id="ID_LAURENCE_FEAT_CONCENTRATION">
+	<element name="Society Expertise" type="Racial Trait" source="Laurence Stuff" id="ID_LAURENCE_RACIAL_SOCIETY_EXPERTISE">
+		<description><p>Society represents knowledge of current affairs. You have expertise in Society.</p></description>
+		<sheet><description>+{{society:skill}}. Uses Intelligence + Expertise.</description></sheet>
+		<rules><stat name="society:skill" value="intelligence:modifier" /><stat name="society:skill" value="proficiency" /><stat name="society:skill" value="proficiency" /></rules>
+	</element>
+
+	<element name="Concentration" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_CONCENTRATION">
+		<description><p>Grants the Concentration racial trait.</p></description>
+		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
+		<rules><grant type="Racial Trait" id="ID_LAURENCE_RACIAL_CONCENTRATION" /></rules>
+	</element>
+
+	<element name="Concentration" type="Racial Trait" source="Laurence Stuff" id="ID_LAURENCE_RACIAL_CONCENTRATION">
 		<description><p>Concentration represents your ability to maintain focus under pressure. It is based on Constitution.</p></description>
-		<sheet><description>Concentration: {{concentration:skill}}. Uses Constitution.</description></sheet>
+		<sheet><description>+{{concentration:skill}}. Uses Constitution.</description></sheet>
 		<rules><stat name="concentration:skill" value="constitution:modifier" /></rules>
 	</element>
 
 	<element name="Concentration Proficiency" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_CONCENTRATION_PROFICIENCY">
-		<description><p>Grants the Concentration Proficiency feature.</p></description>
+		<description><p>Grants the Concentration Proficiency racial trait.</p></description>
 		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
-		<rules><grant type="Feat" id="ID_LAURENCE_FEAT_CONCENTRATION_PROFICIENCY" /></rules>
+		<rules><grant type="Racial Trait" id="ID_LAURENCE_RACIAL_CONCENTRATION_PROFICIENCY" /></rules>
 	</element>
 
-	<element name="Concentration Proficiency" type="Feat" source="Laurence Stuff" id="ID_LAURENCE_FEAT_CONCENTRATION_PROFICIENCY">
+	<element name="Concentration Proficiency" type="Racial Trait" source="Laurence Stuff" id="ID_LAURENCE_RACIAL_CONCENTRATION_PROFICIENCY">
 		<description><p>Concentration represents your ability to maintain focus under pressure. You are proficient in Concentration.</p></description>
-		<sheet><description>Concentration: {{concentration:skill}}. Uses Constitution + Proficiency Bonus.</description></sheet>
+		<sheet><description>+{{concentration:skill}}. Uses Constitution + Proficiency Bonus.</description></sheet>
 		<rules><stat name="concentration:skill" value="constitution:modifier" /><stat name="concentration:skill" value="proficiency" /></rules>
 	</element>
 
-	<element name="Spellpower (Intelligence)" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SPELLPOWER_INT">
-		<description><p>Grants the Spellpower (Intelligence) feature.</p></description>
+	<element name="Concentration Expertise" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_CONCENTRATION_EXPERTISE">
+		<description><p>Grants the Concentration Expertise racial trait.</p></description>
 		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
-		<rules><grant type="Feat" id="ID_LAURENCE_FEAT_SPELLPOWER_INT" /></rules>
+		<rules><grant type="Racial Trait" id="ID_LAURENCE_RACIAL_CONCENTRATION_EXPERTISE" /></rules>
 	</element>
 
-	<element name="Spellpower (Intelligence)" type="Feat" source="Laurence Stuff" id="ID_LAURENCE_FEAT_SPELLPOWER_INT">
+	<element name="Concentration Expertise" type="Racial Trait" source="Laurence Stuff" id="ID_LAURENCE_RACIAL_CONCENTRATION_EXPERTISE">
+		<description><p>Concentration represents your ability to maintain focus under pressure. You have expertise in Concentration.</p></description>
+		<sheet><description>+{{concentration:skill}}. Uses Constitution + Expertise.</description></sheet>
+		<rules><stat name="concentration:skill" value="constitution:modifier" /><stat name="concentration:skill" value="proficiency" /><stat name="concentration:skill" value="proficiency" /></rules>
+	</element>
+
+	<element name="Spellpower (Intelligence)" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SPELLPOWER_INT">
+		<description><p>Grants the Spellpower (Intelligence) racial trait.</p></description>
+		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
+		<rules><grant type="Racial Trait" id="ID_LAURENCE_RACIAL_SPELLPOWER_INT" /></rules>
+	</element>
+
+	<element name="Spellpower (Intelligence)" type="Racial Trait" source="Laurence Stuff" id="ID_LAURENCE_RACIAL_SPELLPOWER_INT">
 		<description><p>Spellpower represents the ability to make magic do what you want. It uses Intelligence.</p></description>
-		<sheet><description>Spellpower: {{spellpower:skill}}. Uses Intelligence.</description></sheet>
+		<sheet><description>+{{spellpower:skill}}. Uses Intelligence.</description></sheet>
 		<rules><stat name="spellpower:skill" value="intelligence:modifier" /></rules>
 	</element>
 
 	<element name="Spellpower (Intelligence) Proficiency" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SPELLPOWER_INT_PROFICIENCY">
-		<description><p>Grants the Spellpower (Intelligence) Proficiency feature.</p></description>
+		<description><p>Grants the Spellpower (Intelligence) Proficiency racial trait.</p></description>
 		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
-		<rules><grant type="Feat" id="ID_LAURENCE_FEAT_SPELLPOWER_INT_PROFICIENCY" /></rules>
+		<rules><grant type="Racial Trait" id="ID_LAURENCE_RACIAL_SPELLPOWER_INT_PROFICIENCY" /></rules>
 	</element>
 
-	<element name="Spellpower (Intelligence) Proficiency" type="Feat" source="Laurence Stuff" id="ID_LAURENCE_FEAT_SPELLPOWER_INT_PROFICIENCY">
+	<element name="Spellpower (Intelligence) Proficiency" type="Racial Trait" source="Laurence Stuff" id="ID_LAURENCE_RACIAL_SPELLPOWER_INT_PROFICIENCY">
 		<description><p>Spellpower uses Intelligence. You are proficient in Spellpower.</p></description>
-		<sheet><description>Spellpower: {{spellpower:skill}}. Uses Intelligence + Proficiency Bonus.</description></sheet>
+		<sheet><description>+{{spellpower:skill}}. Uses Intelligence + Proficiency Bonus.</description></sheet>
 		<rules><stat name="spellpower:skill" value="intelligence:modifier" /><stat name="spellpower:skill" value="proficiency" /></rules>
 	</element>
 
-	<element name="Spellpower (Wisdom)" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SPELLPOWER_WIS">
-		<description><p>Grants the Spellpower (Wisdom) feature.</p></description>
+	<element name="Spellpower (Intelligence) Expertise" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SPELLPOWER_INT_EXPERTISE">
+		<description><p>Grants the Spellpower (Intelligence) Expertise racial trait.</p></description>
 		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
-		<rules><grant type="Feat" id="ID_LAURENCE_FEAT_SPELLPOWER_WIS" /></rules>
+		<rules><grant type="Racial Trait" id="ID_LAURENCE_RACIAL_SPELLPOWER_INT_EXPERTISE" /></rules>
 	</element>
 
-	<element name="Spellpower (Wisdom)" type="Feat" source="Laurence Stuff" id="ID_LAURENCE_FEAT_SPELLPOWER_WIS">
+	<element name="Spellpower (Intelligence) Expertise" type="Racial Trait" source="Laurence Stuff" id="ID_LAURENCE_RACIAL_SPELLPOWER_INT_EXPERTISE">
+		<description><p>Spellpower uses Intelligence. You have expertise in Spellpower.</p></description>
+		<sheet><description>+{{spellpower:skill}}. Uses Intelligence + Expertise.</description></sheet>
+		<rules><stat name="spellpower:skill" value="intelligence:modifier" /><stat name="spellpower:skill" value="proficiency" /><stat name="spellpower:skill" value="proficiency" /></rules>
+	</element>
+
+	<element name="Spellpower (Wisdom)" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SPELLPOWER_WIS">
+		<description><p>Grants the Spellpower (Wisdom) racial trait.</p></description>
+		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
+		<rules><grant type="Racial Trait" id="ID_LAURENCE_RACIAL_SPELLPOWER_WIS" /></rules>
+	</element>
+
+	<element name="Spellpower (Wisdom)" type="Racial Trait" source="Laurence Stuff" id="ID_LAURENCE_RACIAL_SPELLPOWER_WIS">
 		<description><p>Spellpower represents the ability to make magic do what you want. It uses Wisdom.</p></description>
-		<sheet><description>Spellpower: {{spellpower:skill}}. Uses Wisdom.</description></sheet>
+		<sheet><description>+{{spellpower:skill}}. Uses Wisdom.</description></sheet>
 		<rules><stat name="spellpower:skill" value="wisdom:modifier" /></rules>
 	</element>
 
 	<element name="Spellpower (Wisdom) Proficiency" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SPELLPOWER_WIS_PROFICIENCY">
-		<description><p>Grants the Spellpower (Wisdom) Proficiency feature.</p></description>
+		<description><p>Grants the Spellpower (Wisdom) Proficiency racial trait.</p></description>
 		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
-		<rules><grant type="Feat" id="ID_LAURENCE_FEAT_SPELLPOWER_WIS_PROFICIENCY" /></rules>
+		<rules><grant type="Racial Trait" id="ID_LAURENCE_RACIAL_SPELLPOWER_WIS_PROFICIENCY" /></rules>
 	</element>
 
-	<element name="Spellpower (Wisdom) Proficiency" type="Feat" source="Laurence Stuff" id="ID_LAURENCE_FEAT_SPELLPOWER_WIS_PROFICIENCY">
+	<element name="Spellpower (Wisdom) Proficiency" type="Racial Trait" source="Laurence Stuff" id="ID_LAURENCE_RACIAL_SPELLPOWER_WIS_PROFICIENCY">
 		<description><p>Spellpower uses Wisdom. You are proficient in Spellpower.</p></description>
-		<sheet><description>Spellpower: {{spellpower:skill}}. Uses Wisdom + Proficiency Bonus.</description></sheet>
+		<sheet><description>+{{spellpower:skill}}. Uses Wisdom + Proficiency Bonus.</description></sheet>
 		<rules><stat name="spellpower:skill" value="wisdom:modifier" /><stat name="spellpower:skill" value="proficiency" /></rules>
 	</element>
 
-	<element name="Spellpower (Charisma)" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SPELLPOWER_CHA">
-		<description><p>Grants the Spellpower (Charisma) feature.</p></description>
+	<element name="Spellpower (Wisdom) Expertise" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SPELLPOWER_WIS_EXPERTISE">
+		<description><p>Grants the Spellpower (Wisdom) Expertise racial trait.</p></description>
 		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
-		<rules><grant type="Feat" id="ID_LAURENCE_FEAT_SPELLPOWER_CHA" /></rules>
+		<rules><grant type="Racial Trait" id="ID_LAURENCE_RACIAL_SPELLPOWER_WIS_EXPERTISE" /></rules>
 	</element>
 
-	<element name="Spellpower (Charisma)" type="Feat" source="Laurence Stuff" id="ID_LAURENCE_FEAT_SPELLPOWER_CHA">
+	<element name="Spellpower (Wisdom) Expertise" type="Racial Trait" source="Laurence Stuff" id="ID_LAURENCE_RACIAL_SPELLPOWER_WIS_EXPERTISE">
+		<description><p>Spellpower uses Wisdom. You have expertise in Spellpower.</p></description>
+		<sheet><description>+{{spellpower:skill}}. Uses Wisdom + Expertise.</description></sheet>
+		<rules><stat name="spellpower:skill" value="wisdom:modifier" /><stat name="spellpower:skill" value="proficiency" /><stat name="spellpower:skill" value="proficiency" /></rules>
+	</element>
+
+	<element name="Spellpower (Charisma)" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SPELLPOWER_CHA">
+		<description><p>Grants the Spellpower (Charisma) racial trait.</p></description>
+		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
+		<rules><grant type="Racial Trait" id="ID_LAURENCE_RACIAL_SPELLPOWER_CHA" /></rules>
+	</element>
+
+	<element name="Spellpower (Charisma)" type="Racial Trait" source="Laurence Stuff" id="ID_LAURENCE_RACIAL_SPELLPOWER_CHA">
 		<description><p>Spellpower represents the ability to make magic do what you want. It uses Charisma.</p></description>
-		<sheet><description>Spellpower: {{spellpower:skill}}. Uses Charisma.</description></sheet>
+		<sheet><description>+{{spellpower:skill}}. Uses Charisma.</description></sheet>
 		<rules><stat name="spellpower:skill" value="charisma:modifier" /></rules>
 	</element>
 
 	<element name="Spellpower (Charisma) Proficiency" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SPELLPOWER_CHA_PROFICIENCY">
-		<description><p>Grants the Spellpower (Charisma) Proficiency feature.</p></description>
+		<description><p>Grants the Spellpower (Charisma) Proficiency racial trait.</p></description>
 		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
-		<rules><grant type="Feat" id="ID_LAURENCE_FEAT_SPELLPOWER_CHA_PROFICIENCY" /></rules>
+		<rules><grant type="Racial Trait" id="ID_LAURENCE_RACIAL_SPELLPOWER_CHA_PROFICIENCY" /></rules>
 	</element>
 
-	<element name="Spellpower (Charisma) Proficiency" type="Feat" source="Laurence Stuff" id="ID_LAURENCE_FEAT_SPELLPOWER_CHA_PROFICIENCY">
+	<element name="Spellpower (Charisma) Proficiency" type="Racial Trait" source="Laurence Stuff" id="ID_LAURENCE_RACIAL_SPELLPOWER_CHA_PROFICIENCY">
 		<description><p>Spellpower uses Charisma. You are proficient in Spellpower.</p></description>
-		<sheet><description>Spellpower: {{spellpower:skill}}. Uses Charisma + Proficiency Bonus.</description></sheet>
+		<sheet><description>+{{spellpower:skill}}. Uses Charisma + Proficiency Bonus.</description></sheet>
 		<rules><stat name="spellpower:skill" value="charisma:modifier" /><stat name="spellpower:skill" value="proficiency" /></rules>
+	</element>
+
+	<element name="Spellpower (Charisma) Expertise" type="Magic Item" source="Laurence Stuff" id="ID_LAURENCE_ITEM_SPELLPOWER_CHA_EXPERTISE">
+		<description><p>Grants the Spellpower (Charisma) Expertise racial trait.</p></description>
+		<setters><set name="category">New Skills</set><set name="type">New Skill</set><set name="cost">0</set><set name="weight">0 lb.</set><set name="slot">misc</set><set name="attunement">false</set><set name="rarity">Common</set></setters>
+		<rules><grant type="Racial Trait" id="ID_LAURENCE_RACIAL_SPELLPOWER_CHA_EXPERTISE" /></rules>
+	</element>
+
+	<element name="Spellpower (Charisma) Expertise" type="Racial Trait" source="Laurence Stuff" id="ID_LAURENCE_RACIAL_SPELLPOWER_CHA_EXPERTISE">
+		<description><p>Spellpower uses Charisma. You have expertise in Spellpower.</p></description>
+		<sheet><description>+{{spellpower:skill}}. Uses Charisma + Expertise.</description></sheet>
+		<rules><stat name="spellpower:skill" value="charisma:modifier" /><stat name="spellpower:skill" value="proficiency" /><stat name="spellpower:skill" value="proficiency" /></rules>
 	</element>
 
 </elements>
