@@ -52,11 +52,7 @@
 		<p>You may, if you wish, use this talent one additional time between long rests, but there may be consequences.</p>
 	</description>
 	<sheet>
-		<description>You have learned ways to infuse your sight with magic, which can be used in the following ways: &#13;
-		• Gain a +10 bonus on a sight-based ability check, usually Perception or Investigation. &#13;
-		• Gain 10 feet of Manasight for 1 minute, allowing you to see magic, like the Detect Magic spell. &#13;
-		• Gain 60 feet of Enhanced Darkvision for 1 hour, allowing you to see clearly in darkness, or in pitch black as though it were dim light. &#13;
-		You can safely use this talent {{arcane vision:uses}} times between long rests. You may, if you wish, use this talent one additional time between long rests, but there may be consequences.</description>
+		<description>Sight Enhancement. Gain a +10 bonus on a sight-based ability check, usually Perception or Investigation. &#13;&#13;Manasight. Gain 10 feet of Manasight for 1 minute, allowing you to see magic, like the Detect Magic spell. &#13;&#13;Enhanced Darkvision. Gain 60 feet of Enhanced Darkvision for 1 hour, allowing you to see clearly in darkness, or in pitch black as though it were dim light. &#13;&#13;Uses: {{arcane vision:uses}}/Long Rest. You may use this talent one additional time between long rests, but there may be consequences.</description>
 	</sheet>
 	<rules>
 		<stat name="arcane vision:uses" value="proficiency" />
