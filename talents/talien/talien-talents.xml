@@ -22,12 +22,40 @@
 			</ul>
 			<p>You can exit the stance whenever you wish (no action required).</p>
 			<p>If you ever fall prone or are subject to a condition that prevents you from moving, you automatically exit the stance.</p>
-			<p>The stance's benefits will increase with future talents, but you can also train to gain new benefits, as though training a new skill.</p>
 		</description>
 		<sheet action="Bonus Action">
-			<description>
-				Enter Tempered Flame Stance. While in the stance, you are proficient in Dexterity saving throws, gain a +1 bonus to attack rolls with light weapons, can move up to 10 feet on your turn without provoking opportunity attacks, and may change superiority die damage to fire damage. The stance ends if you choose to end it, fall prone, or become unable to move.
-			</description>
+			<description>You enter Tempered Flame Stance and gain the following benefits: &#13;
+			• You are considered proficient in Dexterity saving throws. &#13;
+			• You gain a +1 bonus to attack rolls with light weapons. &#13;
+			• You can move up to 10 feet on your turn without provoking opportunity attacks. &#13;
+			• When you add a superiority die to a damage roll, you can choose for the superiority die's damage to be fire damage. &#13;
+			• You can end the stance at any time, no action required. &#13;
+			• The stance ends automatically if you fall prone or become unable to move.</description>
+		</sheet>
+	</element>
+
+	<element name="Tempered Flame Maneuvers" type="Feat" source="Laurence Stuff" id="ID_TALIEN_FEAT_TEMPERED_FLAME_MANEUVERS">
+		<description>
+			<p>You gain an additional superiority die, and learn the following two maneuvers:</p>
+			<ul>
+				<li><strong>Blistering Strike.</strong> When you hit a creature with a weapon attack, you can expend one superiority die to create a burst of brilliant light. You add the superiority die to the attack's damage roll, and the target must make a Constitution saving throw. On a failed save, it is blinded until the end of your next turn.</li>
+				<li><strong>Flame Wave.</strong> In place of an attack, you can expend two superiority dice to create a wave of fire in a line 30 feet long. Roll both dice and add your Dexterity modifier. Each creature in that line must make a Dexterity saving throw, taking that much fire damage on a failed save, or half as much on a successful one.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You gain an additional superiority die and learn the following maneuvers: &#13;
+			• Blistering Strike. When you hit with a weapon attack, expend one superiority die. Add it to the attack's damage roll, and the target must make a Constitution saving throw. On a failed save, it is blinded until the end of your next turn. &#13;
+			• Flame Wave. In place of an attack, expend two superiority dice to create a 30-foot line of fire. Roll both dice and add your Dexterity modifier. Each creature in the line makes a Dexterity saving throw, taking that much fire damage on a failed save, or half as much on a successful one.</description>
+		</sheet>
+	</element>
+
+	<element name="Deflect Blades" type="Feat" source="Laurence Stuff" id="ID_TALIEN_FEAT_DEFLECT_BLADES">
+		<description>
+			<p>You've trained to be able to deflect enemy sword strikes, ensuring you never take the full force of such an attack.</p>
+			<p>Whenever you take slashing damage, you can reduce the damage taken by an amount equal to your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>Whenever you take slashing damage, reduce the damage taken by {{proficiency}}.</description>
 		</sheet>
 	</element>
 
