@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+
+	<info>
+		<name>Raka's Talents</name>
+		<description>Custom feats for Raka.</description>
+		<author>B B</author>
+		<update version="1.0.0">
+			<file name="raka-talents.xml" url="https://raw.githubusercontent.com/esmer-1/talents/main/raka-talents.xml" />
+		</update>
+	</info>
+
+	<element name="Resolute" type="Feat" source="Laurence Stuff" id="ID_RAKAS_TALENTS_FEAT_RESOLUTE">
+		<description>
+			<p>When below half of your maximum hit points, you gain advantage on Strength, Dexterity, and Constitution saving throws.</p>
+		</description>
+		<sheet>
+			<description>While below half your maximum hit points, you have advantage on Strength, Dexterity, and Constitution saving throws.</description>
+		</sheet>
+	</element>
+
+	<element name="Life Spell Adept" type="Feat" source="Laurence Stuff" id="ID_RAKAS_TALENTS_FEAT_LIFE_SPELL_ADEPT">
+		<description>
+			<p>Once per long rest, you can cast an Abjuration or Restoration spell that you don't have prepared. This costs a spell slot as usual.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Cast one unprepared Abjuration or Restoration spell, expending a spell slot as normal.</description>
+		</sheet>
+	</element>
+
+</elements>
