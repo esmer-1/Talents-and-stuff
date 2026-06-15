@@ -23,14 +23,22 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>
-				You can cast ritual spells as rituals. You can understand wizard spells and cast them from spell scrolls.
-
-				You can learn up to (Intelligence Modifier + Proficiency Bonus) × 2 spells through study. These spells count as sorcerer spells for you.
-
-				To learn a spell, study it for 4 hours per spell level and make an Arcana check with DC 10 + spell level.
-			</description>
+			<description>You gain the following benefits: &#13;
+			• You can cast ritual spells as rituals. &#13;
+			• You can understand wizard spells and cast them from spell scrolls. &#13;
+			• You can learn up to {{wizardry training:spells known}} spells from the sorcerer or wizard spell list. This equals (Intelligence Modifier + Proficiency Bonus) x 2. &#13;
+			• To learn a spell, acquire it from a scroll or spellbook, study it for 4 hours per spell level, then make an Arcana check with DC 10 + the spell's level. &#13;
+			• On a failure, study for 1 additional hour per spell level before trying again. The hours need not be consecutive. &#13;
+			• These spells count as sorcerer spells for you.</description>
 		</sheet>
+		<rules>
+	<stat name="wizardry training:base" value="intelligence:modifier" />
+	<stat name="wizardry training:base" value="proficiency" />
+	<stat name="wizardry training:spells known" value="wizardry training:base" />
+	<stat name="wizardry training:spells known" value="wizardry training:base" />
+
+	<select type="Spell" name="Spell (Wizardry Training)" supports="Sorcerer||Wizard" number="12" />
+</rules>
 	</element>
 
 </elements>
