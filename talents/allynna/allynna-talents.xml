@@ -5,10 +5,28 @@
 		<name>Allynna Talents</name>
 		<description>Custom talents for Allynna.</description>
 		<author>B B</author>
-		<update version="1.0.2">
+		<update version="1.0.3">
 			<file name="allynna-talents.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/talents/allynna/allynna-talents.xml" />
 		</update>
 	</info>
+
+	<element name="Wizardry Training" type="Magic Item" source="Laurence Stuff" id="ID_ALLYNNA_ITEM_WIZARDRY_TRAINING">
+		<description>
+			<p>Grants the Wizardry Training talent.</p>
+		</description>
+		<setters>
+			<set name="category">Talents</set>
+			<set name="type">Talent</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Common</set>
+			<set name="attunement">false</set>
+			<set name="cost">0</set>
+			<set name="weight">0 lb.</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_ALLYNNA_FEAT_WIZARDRY_TRAINING" />
+		</rules>
+	</element>
 
 	<element name="Wizardry Training" type="Feat" source="Laurence Stuff" id="ID_ALLYNNA_FEAT_WIZARDRY_TRAINING">
 		<description>
@@ -40,23 +58,41 @@
 		</rules>
 	</element>
 
+	<element name="Arcane Vision" type="Magic Item" source="Laurence Stuff" id="ID_ALLYNNA_ITEM_ARCANE_VISION">
+		<description>
+			<p>Grants the Arcane Vision talent.</p>
+		</description>
+		<setters>
+			<set name="category">Talents</set>
+			<set name="type">Talent</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Common</set>
+			<set name="attunement">false</set>
+			<set name="cost">0</set>
+			<set name="weight">0 lb.</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_ALLYNNA_FEAT_ARCANE_VISION" />
+		</rules>
+	</element>
+
 	<element name="Arcane Vision" type="Feat" source="Laurence Stuff" id="ID_ALLYNNA_FEAT_ARCANE_VISION">
-	<description>
-		<p>You have learned ways to infuse your sight with magic, which can be used in the following ways:</p>
-		<ul>
-			<li>Gain a +10 bonus on a sight-based ability check, usually Perception or Investigation.</li>
-			<li>Gain 10 feet of Manasight for 1 minute, allowing you to see magic, like the <em>detect magic</em> spell.</li>
-			<li>Gain 60 feet of Enhanced Darkvision for 1 hour, allowing you to see clearly in darkness, or in pitch black as though it were dim light.</li>
-		</ul>
-		<p>You can safely use this talent a number of times between long rests equal to your proficiency bonus.</p>
-		<p>You may, if you wish, use this talent one additional time between long rests, but there may be consequences.</p>
-	</description>
-	<sheet>
-		<description>Sight Enhancement. Gain a +10 bonus on a sight-based ability check, usually Perception or Investigation. &#13;&#13;Manasight. Gain 10 feet of Manasight for 1 minute, allowing you to see magic, like the Detect Magic spell. &#13;&#13;Enhanced Darkvision. Gain 60 feet of Enhanced Darkvision for 1 hour, allowing you to see clearly in darkness, or in pitch black as though it were dim light. &#13;&#13;Uses: {{arcane vision:uses}}/Long Rest. You may use this talent one additional time between long rests, but there may be consequences.</description>
-	</sheet>
-	<rules>
-		<stat name="arcane vision:uses" value="proficiency" />
-	</rules>
-</element>
+		<description>
+			<p>You have learned ways to infuse your sight with magic, which can be used in the following ways:</p>
+			<ul>
+				<li>Gain a +10 bonus on a sight-based ability check, usually Perception or Investigation.</li>
+				<li>Gain 10 feet of Manasight for 1 minute, allowing you to see magic, like the <em>detect magic</em> spell.</li>
+				<li>Gain 60 feet of Enhanced Darkvision for 1 hour, allowing you to see clearly in darkness, or in pitch black as though it were dim light.</li>
+			</ul>
+			<p>You can safely use this talent a number of times between long rests equal to your proficiency bonus.</p>
+			<p>You may, if you wish, use this talent one additional time between long rests, but there may be consequences.</p>
+		</description>
+		<sheet>
+			<description>Sight Enhancement. Gain a +10 bonus on a sight-based ability check, usually Perception or Investigation. &#13;&#13;Manasight. Gain 10 feet of Manasight for 1 minute, allowing you to see magic, like the Detect Magic spell. &#13;&#13;Enhanced Darkvision. Gain 60 feet of Enhanced Darkvision for 1 hour, allowing you to see clearly in darkness, or in pitch black as though it were dim light. &#13;&#13;Uses: {{arcane vision:uses}}/Long Rest. You may use this talent one additional time between long rests, but there may be consequences.</description>
+		</sheet>
+		<rules>
+			<stat name="arcane vision:uses" value="proficiency" />
+		</rules>
+	</element>
 
 </elements>
