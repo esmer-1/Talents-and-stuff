@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0.2" encoding="utf-8"?>
 <elements>
 
 	<info>
@@ -26,5 +26,73 @@
 			<set name="weight">0 lb.</set>
 		</setters>
 	</element>
+
+	```xml
+	<element name="Light Shield" type="Armor" source="Laurence Stuff" id="ID_TOD_ARMOR_LIGHT_SHIELD">
+		<supports>Shield</supports>
+		<description>
+			<p>A small and lightweight shield.</p>
+			<p>While wielding this shield, you gain a +1 bonus to AC.</p>
+			<p>A Light Shield is small and light enough that it only takes a bonus action to don or doff, and counts as a free hand for some purposes (not for casting spells or wielding weapons in two hands).</p>
+		</description>
+		<setters>
+			<set name="category">ToD Items</set>
+			<set name="type">Shield</set>
+			<set name="cost">10 gp</set>
+			<set name="weight">2 lb.</set>
+			<set name="armor">1</set>
+		</setters>
+		<sheet>
+			<description>+1 AC. Bonus action to don or doff. Counts as a free hand for some purposes.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:shield" value="1" bonus="shield" equipped="true" />
+		</rules>
+	</element>
+
+	<element name="Standard Shield" type="Armor" source="Laurence Stuff" id="ID_TOD_ARMOR_STANDARD_SHIELD">
+		<supports>Shield</supports>
+		<description>
+			<p>A standard shield.</p>
+			<p>While wielding this shield, you gain a +2 bonus to AC.</p>
+		</description>
+		<setters>
+			<set name="category">ToD Items</set>
+			<set name="type">Shield</set>
+			<set name="cost">70 gp</set>
+			<set name="weight">6 lb.</set>
+			<set name="armor">2</set>
+		</setters>
+		<sheet>
+			<description>+2 AC.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:shield" value="2" bonus="shield" equipped="true" />
+		</rules>
+	</element>
+
+	<element name="Heavy Shield" type="Armor" source="Laurence Stuff" id="ID_TOD_ARMOR_HEAVY_SHIELD">
+		<supports>Shield</supports>
+		<description>
+			<p>A large reinforced shield.</p>
+			<p>While wielding this shield, you gain a +3 bonus to AC.</p>
+			<p>You must have a Strength score of 13 or higher to use this shield effectively.</p>
+		</description>
+		<setters>
+			<set name="category">ToD Items</set>
+			<set name="type">Shield</set>
+			<set name="cost">500 gp</set>
+			<set name="weight">12 lb.</set>
+			<set name="armor">3</set>
+		</setters>
+		<sheet>
+			<description>+3 AC. Requires Strength 13.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:shield" value="3" bonus="shield" equipped="true" requirements="strength:score>=13" />
+		</rules>
+	</element>
+```
+
 
 </elements>
