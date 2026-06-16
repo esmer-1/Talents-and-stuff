@@ -1,1 +1,5 @@
-16.06.2026 - moved talents to custom "talent" category in equipment 
+15.06.2026
+>did all the stuff
+16.06.2026
+>added talents for Ordel
+>moved all talents to custom "talents" category of equipment
