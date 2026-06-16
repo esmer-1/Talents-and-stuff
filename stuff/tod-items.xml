@@ -5,7 +5,7 @@
 		<name>ToD Items</name>
 		<description>Custom magic items and equipment.</description>
 		<author>B B</author>
-		<update version="1.0.6">
+		<update version="1.0.7">
 			<file name="tod-items.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/stuff/tod-items.xml" />
 		</update>
 	</info>
@@ -27,78 +27,67 @@
 		</setters>
 	</element>
 
-		<element name="Light Shield" type="Armor" source="Laurence Stuff" id="ID_TOD_ARMOR_LIGHT_SHIELD">
-		<supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
-		<description>
-			<p>A small and lightweight shield.</p>
-			<p>While wielding this shield, you gain a +1 bonus to AC.</p>
-			<p>A Light Shield is small and light enough that it only takes a bonus action to don or doff, and counts as a free hand for some purposes, but not for casting spells or wielding weapons in two hands.</p>
-		</description>
-		<setters>
-			<set name="category">Armor</set>
-			<set name="cost" currency="gp">10</set>
-			<set name="weight" lb="2">2 lb.</set>
-			<set name="slot">onehand,secondary</set>
-			<set name="type">Shield</set>
-			<set name="armor">Shield</set>
-			<set name="armorClass">+1</set>
-			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
-		</setters>
-		<sheet>
-			<description>+1 AC. Bonus action to don or doff. Counts as a free hand for some purposes, but not for casting spells or wielding weapons in two hands.</description>
-		</sheet>
-		<rules>
-			<stat name="ac:shield" value="1" bonus="shield" />
-		</rules>
-	</element>
+		<element name="Light Shield" type="Armor" source="Laurence Stuff" id="ID_LAURENCE_GEAR_LIGHT_SHIELD">
+	<supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
+	<description>
+		<p>A small and lightweight shield. Wielding this shield increases your Armor Class by 1.</p>
+		<p>A Light Shield is small and light enough that it only takes a bonus action to don or doff, and counts as a free hand for some purposes, but not for casting spells or wielding weapons in two hands.</p>
+	</description>
+	<setters>
+		<set name="category">Armor</set>
+		<set name="cost" currency="gp">10</set>
+		<set name="weight" lb="2">2 lb.</set>
+		<set name="slot">onehand,secondary</set>
+		<set name="type">Shield</set>
+		<set name="armor">Shield</set>
+		<set name="armorClass">+1</set>
+		<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
+	</setters>
+	<rules>
+		<stat name="ac:shield" value="1" bonus="shield" />
+	</rules>
+</element>
 
-	<element name="Standard Shield" type="Armor" source="Laurence Stuff" id="ID_TOD_ARMOR_STANDARD_SHIELD">
-		<supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
-		<description>
-			<p>A standard shield.</p>
-			<p>While wielding this shield, you gain a +2 bonus to AC.</p>
-		</description>
-		<setters>
-			<set name="category">Armor</set>
-			<set name="cost" currency="gp">70</set>
-			<set name="weight" lb="6">6 lb.</set>
-			<set name="slot">onehand,secondary</set>
-			<set name="type">Shield</set>
-			<set name="armor">Shield</set>
-			<set name="armorClass">+2</set>
-			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
-		</setters>
-		<sheet>
-			<description>+2 AC.</description>
-		</sheet>
-		<rules>
-			<stat name="ac:shield" value="2" bonus="shield" />
-		</rules>
-	</element>
+<element name="Standard Shield" type="Armor" source="Laurence Stuff" id="ID_LAURENCE_GEAR_STANDARD_SHIELD">
+	<supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
+	<description>
+		<p>A standard shield. Wielding this shield increases your Armor Class by 2.</p>
+	</description>
+	<setters>
+		<set name="category">Armor</set>
+		<set name="cost" currency="gp">70</set>
+		<set name="weight" lb="6">6 lb.</set>
+		<set name="slot">onehand,secondary</set>
+		<set name="type">Shield</set>
+		<set name="armor">Shield</set>
+		<set name="armorClass">+2</set>
+		<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
+	</setters>
+	<rules>
+		<stat name="ac:shield" value="2" bonus="shield" />
+	</rules>
+</element>
 
-	<element name="Heavy Shield" type="Armor" source="Laurence Stuff" id="ID_TOD_ARMOR_HEAVY_SHIELD">
-		<supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
-		<description>
-			<p>A large reinforced shield.</p>
-			<p>While wielding this shield, you gain a +3 bonus to AC.</p>
-			<p>You must have a Strength score of 13 or higher to use this shield effectively.</p>
-		</description>
-		<setters>
-			<set name="category">Armor</set>
-			<set name="cost" currency="gp">500</set>
-			<set name="weight" lb="12">12 lb.</set>
-			<set name="slot">onehand,secondary</set>
-			<set name="type">Shield</set>
-			<set name="armor">Shield</set>
-			<set name="armorClass">+3</set>
-			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
-		</setters>
-		<sheet>
-			<description>+3 AC. Requires Strength 13 or higher.</description>
-		</sheet>
-		<rules>
-			<stat name="ac:shield" value="3" bonus="shield" />
-		</rules>
-	</element>
-
+<element name="Heavy Shield" type="Armor" source="Laurence Stuff" id="ID_LAURENCE_GEAR_HEAVY_SHIELD">
+	<supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
+	<description>
+		<p>A large reinforced shield. Wielding this shield increases your Armor Class by 3.</p>
+		<p>You must have a Strength score of 13 or higher to use this shield effectively.</p>
+	</description>
+	<setters>
+		<set name="category">Armor</set>
+		<set name="cost" currency="gp">500</set>
+		<set name="weight" lb="12">12 lb.</set>
+		<set name="slot">onehand,secondary</set>
+		<set name="type">Shield</set>
+		<set name="armor">Shield</set>
+		<set name="strength">13</set>
+		<set name="armorClass">+3</set>
+		<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
+	</setters>
+	<rules>
+		<stat name="ac:shield" value="3" bonus="shield" />
+		<stat name="speed" value="-10" bonus="armor" requirements="!([str:13]||ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT)" />
+	</rules>
+</element>
 </elements>
