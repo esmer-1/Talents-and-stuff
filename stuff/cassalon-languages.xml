@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+
+	<info>
+		<name>Custom Languages</name>
+		<description>Campaign-specific languages.</description>
+		<author>B B</author>
+		<update version="1.0.0">
+			<file name="custom-languages.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/stuff/custom-languages.xml" />
+		</update>
+	</info>
+
+	<element name="Ethelene" type="Language" source="Laurence Stuff" id="ID_LAURENCE_LANGUAGE_ETHELENE">
+		<supports>Standard</supports>
+		<description><p>The language primarily spoken in Ethelon and Perredin.</p></description>
+		<setters>
+			<set name="speakers">Ethelon, Perredin</set>
+			<set name="script"></set>
+		</setters>
+	</element>
+
+	<element name="Zaquian" type="Language" source="Laurence Stuff" id="ID_LAURENCE_LANGUAGE_ZAQUIAN">
+		<supports>Standard</supports>
+		<description><p>The language primarily spoken in Suirenfall and Strath.</p></description>
+		<setters>
+			<set name="speakers">Suirenfall, Strath</set>
+			<set name="script"></set>
+		</setters>
+	</element>
+
+	<element name="Vritian" type="Language" source="Laurence Stuff" id="ID_LAURENCE_LANGUAGE_VRITIAN">
+		<supports>Standard</supports>
+		<description><p>The language primarily spoken in Vritia.</p></description>
+		<setters>
+			<set name="speakers">Vritia</set>
+			<set name="script"></set>
+		</setters>
+	</element>
+
+	<element name="Brycheinne" type="Language" source="Laurence Stuff" id="ID_LAURENCE_LANGUAGE_BRYCHEINNE">
+		<supports>Standard</supports>
+		<description><p>The language primarily spoken in Brychein.</p></description>
+		<setters>
+			<set name="speakers">Brychein</set>
+			<set name="script"></set>
+		</setters>
+	</element>
+
+	<element name="Djuteaux" type="Language" source="Laurence Stuff" id="ID_LAURENCE_LANGUAGE_DJUTEAUX">
+		<supports>Standard</supports>
+		<description><p>The language primarily spoken in Djute and Chaspel.</p></description>
+		<setters>
+			<set name="speakers">Djute, Chaspel</set>
+			<set name="script"></set>
+		</setters>
+	</element>
+
+	<element name="Azbaren" type="Language" source="Laurence Stuff" id="ID_LAURENCE_LANGUAGE_AZBAREN">
+		<supports>Standard</supports>
+		<description><p>The language primarily spoken in Azbar.</p></description>
+		<setters>
+			<set name="speakers">Azbar</set>
+			<set name="script"></set>
+		</setters>
+	</element>
+
+	<element name="Thiraire" type="Language" source="Laurence Stuff" id="ID_LAURENCE_LANGUAGE_THIRAIRE">
+		<supports>Standard</supports>
+		<description><p>The language primarily spoken in Thirai.</p></description>
+		<setters>
+			<set name="speakers">Thirai</set>
+			<set name="script"></set>
+		</setters>
+	</element>
+
+</elements>
