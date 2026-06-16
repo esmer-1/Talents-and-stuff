@@ -4,7 +4,7 @@
 		<name>Laurence Stuff</name>
 		<description>Custom talents and campaign options for Laurence's campaign.</description>
 		<author>B B</author>
-		<update version="1.0.4">
+		<update version="1.0.5">
 			<file name="laurence-stuff.index" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/laurence-stuff.index" />
 		</update>
 	</info>
@@ -18,5 +18,6 @@
 		<file name="talien-talents.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/talents/talien/talien-talents.xml" />
 		<file name="raka-talents.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/talents/raka/raka-talents.xml" />
 		<file name="ordel-talents.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/talents/ordel/ordel-talents.xml" />
+		<file name="cassalon-languages.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/stuff/cassalon-languages.xml" />
 	</files>
 </index>
