@@ -3,9 +3,9 @@
 
 	<info>
 		<name>ToD Items</name>
-		<description>Custom magic items.</description>
+		<description>Custom magic items and equipment.</description>
 		<author>B B</author>
-		<update version="1.0.4">
+		<update version="1.0.5">
 			<file name="tod-items.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/stuff/tod-items.xml" />
 		</update>
 	</info>
@@ -32,17 +32,16 @@
 		<description>
 			<p>A small and lightweight shield.</p>
 			<p>While wielding this shield, you gain a +1 bonus to AC.</p>
-			<p>A Light Shield is small and light enough that it only takes a bonus action to don or doff, and counts as a free hand for some purposes (not for casting spells or wielding weapons in two hands).</p>
+			<p>A Light Shield is small and light enough that it only takes a bonus action to don or doff, and counts as a free hand for some purposes, but not for casting spells or wielding weapons in two hands.</p>
 		</description>
 		<setters>
-			<set name="category">ToD Items</set>
 			<set name="type">Shield</set>
 			<set name="cost">10 gp</set>
 			<set name="weight">2 lb.</set>
 			<set name="armor">1</set>
 		</setters>
 		<sheet>
-			<description>+1 AC. Bonus action to don or doff. Counts as a free hand for some purposes.</description>
+			<description>+1 AC. Bonus action to don or doff. Counts as a free hand for some purposes, but not for casting spells or wielding weapons in two hands.</description>
 		</sheet>
 		<rules>
 			<stat name="ac:shield" value="1" bonus="shield" equipped="true" />
@@ -56,7 +55,6 @@
 			<p>While wielding this shield, you gain a +2 bonus to AC.</p>
 		</description>
 		<setters>
-			<set name="category">ToD Items</set>
 			<set name="type">Shield</set>
 			<set name="cost">70 gp</set>
 			<set name="weight">6 lb.</set>
@@ -78,14 +76,13 @@
 			<p>You must have a Strength score of 13 or higher to use this shield effectively.</p>
 		</description>
 		<setters>
-			<set name="category">ToD Items</set>
 			<set name="type">Shield</set>
 			<set name="cost">500 gp</set>
 			<set name="weight">12 lb.</set>
 			<set name="armor">3</set>
 		</setters>
 		<sheet>
-			<description>+3 AC. Requires Strength 13.</description>
+			<description>+3 AC. Requires Strength 13 or higher.</description>
 		</sheet>
 		<rules>
 			<stat name="ac:shield" value="3" bonus="shield" equipped="true" requirements="strength:score>=13" />
