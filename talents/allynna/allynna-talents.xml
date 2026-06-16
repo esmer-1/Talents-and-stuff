@@ -1,64 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <elements>
 
-	<info>
-		<name>Allynna Talents</name>
-		<description>Custom talents for Allynna.</description>
-		<author>B B</author>
-		<update version="1.0.6">
-			<file name="allynna-talents.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/talents/allynna/allynna-talents.xml" />
-		</update>
-	</info>
+```
+<info>
+	<name>Allynna Talents</name>
+	<description>Custom talents for Allynna.</description>
+	<author>B B</author>
+	<update version="1.0.7">
+		<file name="allynna-talents.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/talents/allynna/allynna-talents.xml" />
+	</update>
+</info>
 
-	<element name="Wizardry Training" type="Magic Item" source="Laurence Stuff" id="ID_ALLYNNA_ITEM_WIZARDRY_TRAINING">
-		<description>
-			<p>Grants the Wizardry Training talent.</p>
-		</description>
-		<setters>
-			<set name="category">Talents</set>
-			<set name="type">Talent</set>
-			<set name="slot">misc</set>
-			<set name="rarity">Common</set>
-			<set name="attunement">false</set>
-			<set name="cost">0</set>
-			<set name="weight">0 lb.</set>
-		</setters>
-		<rules>
-			<grant type="Feat" id="ID_ALLYNNA_FEAT_WIZARDRY_TRAINING" />
-		</rules>
-	</element>
+<element name="Wizardry Training" type="Magic Item" source="Laurence Stuff" id="ID_ALLYNNA_ITEM_WIZARDRY_TRAINING">
+	<description>
+		<p>Grants the Wizardry Training talent.</p>
+	</description>
+	<setters>
+		<set name="category">Talents</set>
+		<set name="type">Talent</set>
+		<set name="slot">misc</set>
+		<set name="rarity">Common</set>
+		<set name="attunement">false</set>
+		<set name="cost">0</set>
+		<set name="weight">0 lb.</set>
+	</setters>
+	<rules>
+		<grant type="Feat" id="ID_ALLYNNA_FEAT_WIZARDRY_TRAINING" />
+	</rules>
+</element>
 
-	<element name="Wizardry Training" type="Feat" source="Laurence Stuff" id="ID_ALLYNNA_FEAT_WIZARDRY_TRAINING">
-		<description>
-			<p>Thanks to Nevod Dorsk, you have received some training in the ways of the wizard, granting you these benefits:</p>
-			<ul>
-				<li>You can cast ritual spells as rituals.</li>
-				<li>You can understand wizard spells and cast them from spell scrolls.</li>
-				<li>You can attempt to learn additional spells from the sorcerer or wizard spell list. To do so, you must first acquire the spell from a scroll or spellbook. You must then study the spell for 4 hours per level of the spell, and then make an Arcana check with DC 10 + the spell's level.</li>
-				<li>On a success, you learn the spell. On a failure, you must study the spell for a further hour per level of the spell before repeating the check. The hours need not be consecutive.</li>
-				<li>You can learn a number of spells in this manner equal to your Intelligence modifier + your proficiency bonus, multiplied by 2.</li>
-				<li>These spells count as sorcerer spells for you.</li>
-			</ul>
-		</description>
-		<sheet>
-			<description>You gain the following benefits: &#13;
-			• You can cast ritual spells as rituals. &#13;
-			• You can understand wizard spells and cast them from spell scrolls. &#13;
-			• You can learn up to {{wizardry training:spells known}} spells from the sorcerer or wizard spell list. This equals (Intelligence Modifier + Proficiency Bonus) x 2. &#13;
-			• To learn a spell, acquire it from a scroll or spellbook, study it for 4 hours per spell level, then make an Arcana check with DC 10 + the spell's level. &#13;
-			• On a failure, study for 1 additional hour per spell level before trying again. The hours need not be consecutive. &#13;
-			• These spells count as sorcerer spells for you.</description>
-		</sheet>
-		<rules>
-			<stat name="wizardry training:base" value="intelligence:modifier" />
-			<stat name="wizardry training:base" value="proficiency" />
-			<stat name="wizardry training:spells known" value="wizardry training:base" />
-			<stat name="wizardry training:spells known" value="wizardry training:base" />
-			<select type="Spell" name="Spell (Wizardry Training)" supports="(Sorcerer||Wizard)" number="12" />
-		</rules>
-	</element>
+<element name="Wizardry Training" type="Feat" source="Laurence Stuff" id="ID_ALLYNNA_FEAT_WIZARDRY_TRAINING">
+	<description>
+		<p>Thanks to Nevod Dorsk, you have received some training in the ways of the wizard, granting you these benefits:</p>
+		<ul>
+			<li>You can cast ritual spells as rituals.</li>
+			<li>You can understand wizard spells and cast them from spell scrolls.</li>
+			<li>You can attempt to learn additional spells from the sorcerer or wizard spell list. To do so, you must first acquire the spell from a scroll or spellbook. You must then study the spell for 4 hours per level of the spell, and then make an Arcana check with DC 10 + the spell's level.</li>
+			<li>On a success, you learn the spell. On a failure, you must study the spell for a further hour per level of the spell before repeating the check. The hours need not be consecutive.</li>
+			<li>You can learn a number of spells in this manner equal to your Intelligence modifier + your proficiency bonus, multiplied by 2.</li>
+			<li>These spells count as sorcerer spells for you.</li>
+		</ul>
+	</description>
+	<sheet>
+		<description>You gain the following benefits: &#13;
+		• You can cast ritual spells as rituals. &#13;
+		• You can understand wizard spells and cast them from spell scrolls. &#13;
+		• You can learn up to {{wizardry training:spells known}} spells from the sorcerer or wizard spell list. This equals (Intelligence Modifier + Proficiency Bonus) x 2. &#13;
+		• To learn a spell, acquire it from a scroll or spellbook, study it for 4 hours per spell level, then make an Arcana check with DC 10 + the spell's level. &#13;
+		• On a failure, study for 1 additional hour per spell level before trying again. The hours need not be consecutive. &#13;
+		• These spells count as sorcerer spells for you.</description>
+	</sheet>
+	<rules>
+		<stat name="wizardry training:base" value="intelligence:modifier" />
+		<stat name="wizardry training:base" value="proficiency" />
+		<stat name="wizardry training:spells known" value="wizardry training:base" />
+		<stat name="wizardry training:spells known" value="wizardry training:base" />
+		<select type="Spell" name="Spell (Wizardry Training)" supports="(Sorcerer||Wizard)" number="12" />
+	</rules>
+</element>
 
-	<element name="Arcane Vision" type="Feat" source="Laurence Stuff" id="ID_ALLYNNA_FEAT_ARCANE_VISION">
+<element name="Arcane Vision" type="Magic Item" source="Laurence Stuff" id="ID_ALLYNNA_ITEM_ARCANE_VISION">
+	<description>
+		<p>Grants the Arcane Vision talent.</p>
+	</description>
+	<setters>
+		<set name="category">Talents</set>
+		<set name="type">Talent</set>
+		<set name="slot">misc</set>
+		<set name="rarity">Common</set>
+		<set name="attunement">false</set>
+		<set name="cost">0</set>
+		<set name="weight">0 lb.</set>
+	</setters>
+	<rules>
+		<grant type="Feat" id="ID_ALLYNNA_FEAT_ARCANE_VISION" />
+	</rules>
+</element>
+
+<element name="Arcane Vision" type="Feat" source="Laurence Stuff" id="ID_ALLYNNA_FEAT_ARCANE_VISION">
 	<description>
 		<p>You have learned ways to infuse your sight with magic, which can be used in the following ways:</p>
 		<ul>
@@ -82,4 +102,6 @@
 		<stat name="arcane vision:uses" value="proficiency" bonus="base" />
 	</rules>
 </element>
+```
+
 </elements>
