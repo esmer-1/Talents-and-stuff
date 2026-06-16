@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+
+	<info>
+		<name>Ordel Talents</name>
+		<description>Custom talents for Ordel.</description>
+		<author>B B</author>
+		<update version="1.0.0">
+			<file name="ordel-talents.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/talents/ordel/ordel-talents.xml" />
+		</update>
+	</info>
+
+	<element name="Mystic Defence" type="Feat" source="Laurence Stuff" id="ID_ORDEL_FEAT_MYSTIC_DEFENCE">
+	<description>
+		<p>Through training, you have discovered a way to combine a monk's unarmoured defence with your natural armour, granting you the following benefits:</p>
+		<ul>
+			<li>You can add your Wisdom modifier to your Natural Armour AC.</li>
+			<li>You are no longer considered prone when using Shell Defence.</li>
+		</ul>
+	</description>
+	<sheet>
+		<description>You gain the following benefits: &#13;
+		• Add your Wisdom modifier to your Natural Armour AC. &#13;
+		• You are no longer considered prone when using Shell Defence.</description>
+	</sheet>
+	<rules>
+		<!-- Tortle Package -->
+		<stat name="tortle:natural armor" value="wisdom:modifier" />
+		
+		<!-- Monsters of the Multiverse -->
+		<stat name="ac:natural armor:tortle" value="wisdom:modifier" />
+
+		<!-- Rename AC calculation -->
+		<stat name="ac:calculation" value="ac:natural armor:tortle" bonus="calculation" equipped="![armor:any]" alt="Natural Armor + Mystic Defence" />
+		<stat name="ac:calculation" value="tortle:natural armor" bonus="calculation" alt="Natural Armor + Mystic Defence" />
+	</rules>
+</element>
+
+	<element name="Steadying Presence" type="Feat" source="Laurence Stuff" id="ID_ORDEL_FEAT_STEADYING_PRESENCE">
+		<description>
+			<p>If an ally within 5 feet of you fails a saving throw, you can use your reaction to let them reroll the saving throw, provided that you are aware of what's causing the effect.</p>
+			<p>You can do this a number of times per long rest equal to your Wisdom modifier.</p>
+		</description>
+		<sheet action="Reaction" usage="{{steadying presence:uses}}/Long Rest">
+			<description>When an ally within 5 feet of you fails a saving throw, you can use your reaction to allow them to reroll the saving throw, provided you are aware of the source of the effect.</description>
+		</sheet>
+		<rules>
+			<stat name="steadying presence:uses" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+</elements>
