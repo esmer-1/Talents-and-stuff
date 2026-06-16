@@ -5,7 +5,7 @@
 		<name>ToD Items</name>
 		<description>Custom magic items.</description>
 		<author>B B</author>
-		<update version="1.0.2">
+		<update version="1.0.3">
 			<file name="tod-items.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/stuff/tod-items.xml" />
 		</update>
 	</info>
