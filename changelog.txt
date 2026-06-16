@@ -1,1 +1,1 @@
-
+16.06.2026 - moved talents to custom "talent" category in equipment 
