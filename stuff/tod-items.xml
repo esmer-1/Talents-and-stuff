@@ -1,11 +1,11 @@
-<?xml version="1.0.2" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <elements>
 
 	<info>
 		<name>ToD Items</name>
 		<description>Custom magic items.</description>
 		<author>B B</author>
-		<update version="1.0.1">
+		<update version="1.0.2">
 			<file name="tod-items.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/stuff/tod-items.xml" />
 		</update>
 	</info>
