@@ -5,7 +5,7 @@
 		<name>ToD Items</name>
 		<description>Custom magic items.</description>
 		<author>B B</author>
-		<update version="1.0.3">
+		<update version="1.0.4">
 			<file name="tod-items.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/stuff/tod-items.xml" />
 		</update>
 	</info>
@@ -27,7 +27,6 @@
 		</setters>
 	</element>
 
-	```xml
 	<element name="Light Shield" type="Armor" source="Laurence Stuff" id="ID_TOD_ARMOR_LIGHT_SHIELD">
 		<supports>Shield</supports>
 		<description>
@@ -92,7 +91,5 @@
 			<stat name="ac:shield" value="3" bonus="shield" equipped="true" requirements="strength:score>=13" />
 		</rules>
 	</element>
-```
-
 
 </elements>
