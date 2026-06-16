@@ -7,7 +7,7 @@
 	<name>Allynna Talents</name>
 	<description>Custom talents for Allynna.</description>
 	<author>B B</author>
-	<update version="1.0.8">
+	<update version="1.0.9">
 		<file name="allynna-talents.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/talents/allynna/allynna-talents.xml" />
 	</update>
 </info>
@@ -49,7 +49,7 @@
 		• You can learn up to {{wizardry training:spells known}} spells from the sorcerer or wizard spell list. This equals (Intelligence Modifier + Proficiency Bonus) x 2. &#13;
 		• To learn a spell, acquire it from a scroll or spellbook, study it for 4 hours per spell level, then make an Arcana check with DC 10 + the spell's level. &#13;
 		• On a failure, study for 1 additional hour per spell level before trying again. The hours need not be consecutive. &#13;
-		• These spells count as sorcerer spells for you.</description>
+		These spells count as sorcerer spells for you.</description>
 	</sheet>
 	<rules>
 		<stat name="wizardry training:base" value="intelligence:modifier" />
