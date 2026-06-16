@@ -3,3 +3,5 @@
 16.06.2026
 >added talents for Ordel
 >moved all talents to custom "talents" category of equipment
+17.06.2026
+>added custom languages
