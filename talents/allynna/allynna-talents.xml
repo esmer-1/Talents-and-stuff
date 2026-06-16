@@ -71,12 +71,15 @@
 	</description>
 
 	<sheet usage="{{arcane vision:uses}}/Long Rest">
-		<description>Sight Enhancement. Gain a +10 bonus on a sight-based ability check, usually Perception or Investigation. &#13;&#13;Manasight. Gain 10 feet of Manasight for 1 minute, allowing you to see magic, like the Detect Magic spell. &#13;&#13;Enhanced Darkvision. Gain 60 feet of Enhanced Darkvision for 1 hour. Within this range, magical and nonmagical darkness don't impede your vision, and you perceive them as dim light. &#13;&#13;You may use this talent one additional time between long rests, but there may be consequences.</description>
+		<description>You gain the following benefits: &#13;
+		• Sight Enhancement: +10 to sight-based ability checks. &#13;
+		• Manasight: 10 ft. for 1 minute (as Detect Magic). &#13;
+		• Enhanced Darkvision: 60 ft. for 1 hour. Magical and nonmagical darkness are treated as dim light. &#13;
+		• One additional use beyond the safe limit is possible, but may have consequences.</description>
 	</sheet>
 
 	<rules>
-		<stat name="arcane vision:uses" value="proficiency" />
+		<stat name="arcane vision:uses" value="proficiency" bonus="base" />
 	</rules>
 </element>
-
 </elements>
