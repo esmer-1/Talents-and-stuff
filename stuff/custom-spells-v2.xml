@@ -77,6 +77,10 @@
 			<set name="isConcentration">false</set>
 			<set name="isRitual">true</set>
 		</setters>
+
+		<rules>
+	<select type="Companion" name="Find Familiar" supports="Familiar" requirements="!(ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CHAIN||ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_CHAIN)" />
+</rules>
 		
 	</element>
 
