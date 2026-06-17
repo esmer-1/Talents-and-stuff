@@ -10,6 +10,8 @@
 	<element name="Friends (Laurence)" type="Spell" source="Laurence Stuff" id="ID_LAURENCE_STUFF_SPELL_FRIENDS">
 		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
 		<description>
+			<p>For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn’t hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood. The creature is not forced to become hostile, but you cannot cast this spell on that creature again until at least 7 days have passed. A creature might react negatively or seek retribution at the DM’s discretion, depending on the nature of your interaction with it.</p>
+		</description>
 		<setters>
 			<set name="keywords"></set>
 			<set name="level">0</set>
@@ -25,6 +27,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+
 
 	<element name="Light (Laurence)" type="Spell" source="Laurence Stuff" id="ID_LAURENCE_STUFF_SPELL_LIGHT">
 		<supports>Bard, Cleric, Sorcerer, Wizard, Artificer, Spell Saving Throw</supports>
