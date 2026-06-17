@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
+
+  <info>
+    <name>Laurence Stuff</name>
+    <description>Custom spells and spell changes for Laurence's campaign.</description>
+    <author>esmer-1</author>
+    <update version="1.0.0">
+      <file name="custom-spells-v2.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/stuff/custom-spells-v2.xml" />
+    </update>
+  </info>
 	
 	<element name="Friends (Laurence)" type="Spell" source="Laurence Stuff" id="ID_LAURENCE_STUFF_SPELL_FRIENDS">
 		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
