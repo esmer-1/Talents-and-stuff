@@ -259,44 +259,5 @@
 		</setters>
 	</element>
 
-	<element name="Teleport (Laurence)" type="Spell" source="Laurence Stuff" id="ID_LAURENCE_STUFF_SPELL_TELEPORT">
-		<supports>Bard, Sorcerer, Wizard</supports>
-		<description>
-			<p>This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can’t be held or carried by an unwilling creature.</p>
-			<p class="indent">The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The DM rolls d100 and consults the table.</p>
-			<table>
-				<thead>
-					<tr><td class="left">Familiarity</td><td>Mishap</td><td>Similar Area</td><td>Off Target</td><td>On Target</td></tr>
-				</thead>
-				<tr><td class="left">Permanent Circle</td><td>—</td><td>—</td><td>—</td><td>01–100</td></tr>
-				<tr><td class="left">Associated object</td><td>—</td><td>—</td><td>—</td><td>01–100</td></tr>
-				<tr><td class="left">Very familiar</td><td>01–05</td><td>06–13</td><td>14–24</td><td>25–100</td></tr>
-				<tr><td class="left">Seen casually</td><td>01–33</td><td>34–43</td><td>44–53</td><td>54–100</td></tr>
-				<tr><td class="left">Viewed once</td><td>01–43</td><td>44–53</td><td>54–73</td><td>74–100</td></tr>
-				<tr><td class="left">Description</td><td>01–43</td><td>44–53</td><td>54–73</td><td>74–100</td></tr>
-				<tr><td class="left">False destination</td><td>01–50</td><td>51–100</td><td>—</td><td>—</td></tr>
-			</table>
-			<p class="indent"><strong><em>Familiarity.</em></strong> “Permanent circle” means a permanent teleportation circle whose sigil sequence you know. Some permanent teleportation circles are protected and require a specific key, token, sigil, or other authorization. Such protected circles cannot be used as teleport destinations without the required permission. “Associated object” means that you possess an object taken from the desired destination within the last six months, such as a book from a wizard’s library, bed linen from a royal suite, or a chunk of marble from a lich’s secret tomb.</p>
-			<p class="indent">“Very familiar” is a place you have been very often, a place you have carefully studied, or a place you can see when you cast the spell. “Seen casually” is someplace you have seen more than once but with which you aren’t very familiar. “Viewed once” is a place you have seen once, possibly using magic. “Description” is a place whose location and appearance you know through someone else’s description, perhaps from a map.</p>
-			<p class="indent">“False destination” is a place that doesn’t exist. Perhaps you tried to scry an enemy’s sanctum but instead viewed an illusion, or you are attempting to teleport to a familiar location that no longer exists.</p>
-			<p class="indent"><strong><em>On Target.</em></strong> You and your group (or the target object) appear where you want to.</p>
-			<p class="indent"><strong><em>Off Target.</em></strong> You and your group (or the target object) appear a random distance away from the destination in a random direction. Distance off target is 1d10 × 1d10 percent of the distance that was to be traveled. For example, if you tried to travel 120 miles, landed off target, and rolled a 5 and 3 on the two d10s, then you would be off target by 15 percent, or 18 miles. The DM determines the direction off target randomly by rolling a d8 and designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass. If you were teleporting to a coastal city and wound up 18 miles out at sea, you could be in trouble.</p>
-			<p class="indent"><strong><em>Similar Area.</em></strong> You and your group (or the target object) wind up in a different area that’s visually or thematically similar to the target area. If you are heading for your home laboratory, for example, you might wind up in another wizard’s laboratory or in an alchemical supply shop that has many of the same tools and implements as your laboratory. Generally, you appear in the closest similar place, but since the spell has no range limit, you could conceivably wind up anywhere on the plane.</p>
-			<p class="indent"><strong><em>Mishap.</em></strong> The spell’s unpredictable magic results in a difficult journey. Each teleporting creature (or the target object) takes 3d10 force damage, and the DM rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time).</p>
-		</description>
-		<setters>
-			<set name="keywords">teleport,force</set>
-			<set name="level">7</set>
-			<set name="school">Conjuration</set>
-			<set name="time">1 action</set>
-			<set name="duration">Instantaneous</set>
-			<set name="range">10 feet</set>
-			<set name="hasVerbalComponent">true</set>
-			<set name="hasSomaticComponent">false</set>
-			<set name="hasMaterialComponent">false</set>
-			<set name="materialComponent" />
-			<set name="isConcentration">false</set>
-			<set name="isRitual">false</set>
-		</setters>
-	</element>
+	
 </elements>
