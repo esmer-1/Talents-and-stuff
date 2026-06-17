@@ -5,7 +5,7 @@
     <name>Laurence Stuff</name>
     <description>Custom spells and spell changes for Laurence's campaign.</description>
     <author>esmer-1</author>
-    <update version="1.0.2">
+    <update version="1.0.3">
       <file name="custom-spells-v2.xml" url="https://raw.githubusercontent.com/esmer-1/Talents-and-stuff/refs/heads/main/stuff/custom-spells-v2.xml" />
     </update>
   </info>
